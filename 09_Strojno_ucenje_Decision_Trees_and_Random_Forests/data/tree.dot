@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="relationship <= 0.5\nsamples = 26048\nvalue = [19750, 6298]\nclass = <=50K", fillcolor="#eda978"] ;
+1 [label="education_num <= 12.5\nsamples = 10504\nvalue = [5764, 4740]\nclass = <=50K", fillcolor="#fae9dc"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="education_num <= 8.5\nsamples = 7331\nvalue = [4906, 2425]\nclass = <=50K", fillcolor="#f2bf9b"] ;
+1 -> 2 ;
+3 [label="samples = 1192\nvalue = [1036, 156]\nclass = <=50K", fillcolor="#e99457"] ;
+2 -> 3 ;
+4 [label="samples = 6139\nvalue = [3870, 2269]\nclass = <=50K", fillcolor="#f4cbad"] ;
+2 -> 4 ;
+5 [label="hours_per_week <= 31.0\nsamples = 3173\nvalue = [858, 2315]\nclass = >50K", fillcolor="#82c1ef"] ;
+1 -> 5 ;
+6 [label="samples = 205\nvalue = [123, 82]\nclass = <=50K", fillcolor="#f6d5bd"] ;
+5 -> 6 ;
+7 [label="samples = 2968\nvalue = [735, 2233]\nclass = >50K", fillcolor="#7abdee"] ;
+5 -> 7 ;
+8 [label="relationship <= 4.5\nsamples = 15544\nvalue = [13986, 1558]\nclass = <=50K", fillcolor="#e88f4f"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="education_num <= 12.5\nsamples = 14277\nvalue = [13327, 950]\nclass = <=50K", fillcolor="#e78a47"] ;
+8 -> 9 ;
+10 [label="samples = 11364\nvalue = [10980, 384]\nclass = <=50K", fillcolor="#e68540"] ;
+9 -> 10 ;
+11 [label="samples = 2913\nvalue = [2347, 566]\nclass = <=50K", fillcolor="#eb9f69"] ;
+9 -> 11 ;
+12 [label="education_num <= 10.5\nsamples = 1267\nvalue = [659, 608]\nclass = <=50K", fillcolor="#fdf5f0"] ;
+8 -> 12 ;
+13 [label="samples = 776\nvalue = [504, 272]\nclass = <=50K", fillcolor="#f3c5a4"] ;
+12 -> 13 ;
+14 [label="samples = 491\nvalue = [155, 336]\nclass = >50K", fillcolor="#94caf1"] ;
+12 -> 14 ;
+}
